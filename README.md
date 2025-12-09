@@ -82,6 +82,14 @@ All configuration files are symlinked from this repository to their proper locat
 - `bashrc` → `~/.bashrc`
 - `bash_profile` → `~/.bash_profile`
 - `gtkrc-2.0` → `~/.gtkrc-2.0`
+- `wallpapers/` → copied to `~/Pictures/`
+
+## Themes and Appearance
+
+- **GTK Theme**: Breeze (installed via package list)
+- **Icon Theme**: Breeze Dark (installed via package list)
+- **KDE Theme**: Breeze Dark
+- **Wallpapers**: Stored in `wallpapers/` directory, copied to `~/Pictures/` during installation
 
 ## Package Lists
 
@@ -100,6 +108,9 @@ cp -r ~/.config/* config/
 cp ~/.bashrc bashrc
 cp ~/.bash_profile bash_profile
 cp ~/.gtkrc-2.0 gtkrc-2.0
+
+# Copy wallpapers (if you added new ones)
+cp ~/Pictures/*.{jpg,png,jpeg,webp} wallpapers/ 2>/dev/null
 
 # Update package lists
 pacman -Qqe > pkglist.txt

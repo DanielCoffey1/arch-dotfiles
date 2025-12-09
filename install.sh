@@ -104,6 +104,14 @@ setup_symlinks() {
         echo -e "${GREEN}Symlinked .gtkrc-2.0${NC}"
     fi
 
+    # Copy wallpapers
+    if [ -d "$DOTFILES_DIR/wallpapers" ]; then
+        echo -e "${YELLOW}Copying wallpapers...${NC}"
+        mkdir -p ~/Pictures
+        cp -r "$DOTFILES_DIR/wallpapers"/* ~/Pictures/
+        echo -e "${GREEN}Wallpapers copied to ~/Pictures/${NC}"
+    fi
+
     echo -e "${GREEN}Symlinks created successfully!${NC}"
 }
 
