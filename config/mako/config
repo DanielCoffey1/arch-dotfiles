@@ -1,0 +1,31 @@
+# Mako notification daemon configuration
+# Color scheme matching "blind angel" wallpaper
+
+font=JetBrainsMono Nerd Font 11
+background-color=#0a0e1a
+text-color=#e8f4f8
+border-color=#87ceeb
+border-size=2
+border-radius=10
+padding=15
+margin=10
+default-timeout=5000
+
+# Grouping
+group-by=app-name
+
+# Urgency levels
+[urgency=low]
+background-color=#1e3a5f
+text-color=#b0e0e6
+border-color=#87ceeb
+
+[urgency=normal]
+background-color=#0a0e1a
+text-color=#e8f4f8
+border-color=#87ceeb
+
+[urgency=high]
+background-color=#1e3a5f
+text-color=#ffffff
+border-color=#b0e0e6

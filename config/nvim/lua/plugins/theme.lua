@@ -1,0 +1,1 @@
+/home/djcoffey/.config/omarchy/current/theme/neovim.lua

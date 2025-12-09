@@ -1,0 +1,66 @@
+# Sensitive files
+*.key
+*.pem
+*.p12
+*.pfx
+*password*
+*secret*
+*token*
+.env
+.env.*
+config/pulse/cookie
+
+# Cache and temporary files
+*.cache
+*.tmp
+*.log
+*~
+.DS_Store
+
+# Specific config directories with sensitive data
+config/1Password/
+config/obsidian/
+config/Signal/
+config/Typora/
+
+# Browser profiles and cache
+config/chromium/
+config/mozilla/
+
+# Application data and cache
+config/*/Cache/
+config/*/cache/
+config/*/CachedData/
+config/*/GPUCache/
+config/**/Cookies
+config/**/History
+config/**/Sessions
+config/**/cache/
+config/**/*cache*
+config/**/*.db
+config/**/*.db-shm
+config/**/*.db-wal
+config/**/*.db-journal
+
+# Runtime data
+config/ibus/bus/
+config/go/telemetry/
+config/session/
+config/libaccounts-glib/
+
+# Backup files and old configs
+*.backup
+*.bak
+*.bak.*
+*.old
+
+# Git credential helper
+.git-credentials
+
+# SSH keys
+*.pub
+id_*
+
+# GPG keys
+*.gpg
+*.asc
